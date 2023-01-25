@@ -4,7 +4,9 @@
   "description": "",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "build": "parcel build src/index.html",
+    "build:dev": "parcel src/index.html"
   },
   "keywords": [],
   "author": "",
