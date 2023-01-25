@@ -1,7 +1,6 @@
 interface ComponentStructure {
   element: Element;
 }
-
 class Component implements ComponentStructure {
   public element: Element;
   private readonly parentElement: Element;
