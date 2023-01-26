@@ -1,20 +1,14 @@
-import RatingListComponent from "./components/RatingButtonComponent/RatingButtonComponent";
+import HeaderComponent from "./components/HeaderComponent/HeaderComponent";
+import ListContainerComponent from "./components/ListContainerComponent/ListContainerComponent";
+import series from "./series/series";
 
-/* Mport HeaderComponent from "./components/HeaderComponent/HeaderComponent";
-import SeriesListContainerComponent from "./components/SeriesListContainerComponent/SeriesListContainerComponent";
-*/
 const appContainer = document.querySelector(".container")!;
 
-/*
-Const headerComponent = new HeaderComponent(appContainer);
-const seriesListContainerComponent = new SeriesListContainerComponent(
-  appContainer
+const headerComponent = new HeaderComponent(appContainer);
+const seriesListContainerComponent = new ListContainerComponent(
+  appContainer,
+  series
 );
 
 headerComponent.render();
 seriesListContainerComponent.render();
-*/
-
-const buttons = new RatingListComponent(appContainer);
-
-buttons.render();
