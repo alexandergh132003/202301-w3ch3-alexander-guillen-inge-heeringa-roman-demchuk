@@ -1,5 +1,6 @@
-import { type Series, type SeriesStructure } from "../../types/types";
+import { type SeriesStructure } from "../../types/types";
 import Component from "../Component/Component";
+import RatingListComponent from "../RatingButtonComponent/RatingButtonComponent";
 
 class CardComponent extends Component {
   series: SeriesStructure;
@@ -19,6 +20,11 @@ class CardComponent extends Component {
       <ul class="score"></ul>
       <button><i class="icon icon--delete fas fa-times-circle"></i></button>
     `;
+
+    const ratingListComponent = new RatingListComponent(
+      this.element.querySelector(".score")!
+    );
+    ratingListComponent.render();
   }
 }
 
