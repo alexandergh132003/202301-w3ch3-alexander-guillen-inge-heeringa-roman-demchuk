@@ -1,11 +1,8 @@
-interface ComponentStructure {
-  element: Element;
-  render: () => void;
-}
+import { type ComponentStructure } from "../../types/types";
 
 class Component implements ComponentStructure {
   public element: Element;
-  private readonly parentElement: Element;
+  parentElement: Element;
 
   constructor(parentElement: Element, className: string, tagName: string) {
     this.element = document.createElement(tagName);
