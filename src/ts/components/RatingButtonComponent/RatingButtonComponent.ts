@@ -27,8 +27,8 @@ class RatingListComponent extends Component {
       index: number,
       buttonCollection: HTMLElement[]
     ) => {
-      button.addEventListener("ick", () => {
-        buttonCollection.slice(0, index).forEach((button) => {
+      button.addEventListener("click", () => {
+        buttonCollection.slice(0, index + 1).forEach((button) => {
           button.className = "icon-score fas fa-star";
         });
       });
