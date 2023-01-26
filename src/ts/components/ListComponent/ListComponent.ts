@@ -24,12 +24,13 @@ class ListComponent extends Component {
     this.element.innerHTML = `<h3 class="list__title">${this.title}</h3>
         <span class="list__info">${this.listInfo}</span>
         <!--<span class="list__info">Congrats! You've watched all your series</span>-->
-        <ul class="series">
-        
-        </ul>`;
+        <ul class="series"></ul>`;
 
     this.series.forEach((serie) => {
-      const seriesCard = new CardComponent(this.element, serie);
+      const seriesCard = new CardComponent(
+        this.element.querySelector(".series")!,
+        serie
+      );
       seriesCard.render();
     });
   }
