@@ -10,3 +10,8 @@ export interface SeriesStructure {
 }
 
 export type Series = SeriesStructure[];
+
+export interface ComponentStructure {
+  element: Element;
+  render: () => void;
+}
