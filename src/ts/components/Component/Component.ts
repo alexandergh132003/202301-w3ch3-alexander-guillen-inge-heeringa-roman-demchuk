@@ -1,6 +1,8 @@
 interface ComponentStructure {
   element: Element;
+  render: () => void;
 }
+
 class Component implements ComponentStructure {
   public element: Element;
   private readonly parentElement: Element;
