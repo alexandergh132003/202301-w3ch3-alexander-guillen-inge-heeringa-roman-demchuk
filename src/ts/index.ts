@@ -1,15 +1,12 @@
 import HeaderComponent from "./components/HeaderComponent/HeaderComponent";
-import MainComponent from "./components/MainComponent/MainComponent";
-import SectionComponent from "./components/SectionComponent/SectionComponent";
+import SeriesListContainerComponent from "./components/SeriesListContainerComponent/SeriesListContainerComponent";
 
 const appContainer = document.querySelector(".container")!;
 
 const headerComponent = new HeaderComponent(appContainer);
-const mainComponent = new MainComponent(appContainer);
+const seriesListContainerComponent = new SeriesListContainerComponent(
+  appContainer
+);
 
 headerComponent.render();
-mainComponent.render();
-
-const sectionComponent = new SectionComponent(mainComponent.element);
-
-sectionComponent.render();
+seriesListContainerComponent.render();
