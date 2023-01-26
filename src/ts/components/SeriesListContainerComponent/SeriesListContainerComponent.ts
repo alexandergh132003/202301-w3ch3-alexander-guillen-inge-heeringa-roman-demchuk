@@ -12,6 +12,7 @@ class SeriesListContainerComponent extends Component {
       this.element,
       "Pending series"
     );
+
     const watchedSeriesListComponent = new SeriesListComponent(
       this.element,
       "Watched series"
